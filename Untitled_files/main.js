@@ -4,7 +4,20 @@
 	License: pixelarity.com/license
 */
 
+
 (function($) {
+
+document.addEventListener('DOMContentLoaded', function() {
+    $('.lightbox').css('z-index','99999');
+    $('#overlay').fadeIn(300);
+    
+}, false);
+
+$('#open').click(function(e){
+    $('#overlay').fadeOut(300);
+});
+
+
 
 	// Settings.
 		var settings = {
